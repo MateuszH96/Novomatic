@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.23)
+set(This Zad2)
+project(${This})
+set(CMAKE_CXX_STANDARD 11)
+set(NAME_EXE src/main.cpp)
+
+add_executable(${This} ${NAME_EXE})
+add_subdirectory(src)
+target_link_libraries(${This} SRC)
+target_link_libraries(${This} -lsfml-graphics -lsfml-window -lsfml-system)
