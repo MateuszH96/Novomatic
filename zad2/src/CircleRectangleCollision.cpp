@@ -34,6 +34,5 @@ bool CircleRectangleCollision::isTwoSfVectCollision(sf::Vector2f a, sf::Vector2f
 {
     bool x=(a.x>=b.x&&a.x<=b.y)||(a.y>=b.x&&a.y<=b.y);
     bool y=(b.x>=a.x&&b.x<=a.y)||(b.y>=a.x&&b.y<=a.y);
-    //printf("a.x=%f,a.y=%f,b.x=%f,b.y=%f\n",a.x,a.y,b.x,b.y);
     return x||y;
 }
